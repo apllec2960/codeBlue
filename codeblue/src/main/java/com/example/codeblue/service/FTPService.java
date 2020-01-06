@@ -15,10 +15,10 @@ import org.apache.commons.net.io.CopyStreamAdapter;
 
 public class FTPService {
    // 저장할 서버 주소
-    private static final String SERVER = "crazyoung.cdn3.cafe24.com"; //CDN주소
-    private static final String USER = "crazyoung"; 
+    private static final String SERVER = "e2garden.cdn3.cafe24.com"; //CDN주소
+    private static final String USER = "e2garden"; 
     private static final int PORT = 21; // 포트번호  FTP21, SFTP22
-    private static final String PW = "2275610sk!"; // 카페24 비밀번호
+    private static final String PW = "dlwjddnjs12!@"; // 카페24 비밀번호
     
     FTPClient ftp = null;
     

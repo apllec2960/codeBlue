@@ -166,7 +166,6 @@
 								</table>
 							</div>
 						</div>
-						
 					</div>
 			</div>
 		</div> 
@@ -383,10 +382,10 @@ function buttonHide(){
 
 //질문 페이징 버튼
 function questionPaging(){
-	if(currentPage <= 1){
+	if(currentPage == 1){
 		$("#QuestionNextBtn").show()
 		$("#QuestionPrevBtn").hide()	
-	}else if(currentPage >= lastPage){
+	}else if(currentPage > lastPage){
 		$("#QuestionNextBtn").hide()
 		$("#QuestionPrevBtn").show()	
 	}else{
@@ -397,10 +396,10 @@ function questionPaging(){
 
 //답글 페이징 버튼
 function answerPaging(){
-	if(currentPage <= 1){
+	if(currentPage == 1){
 		$("#AnswerNextBtn").show()
 		$("#AnswerPrevBtn").hide()
-	}else if(currentPage >= lastPage){
+	}else if(currentPage > lastPage){
 		$("#AnswerNextBtn").hide()
 		$("#AnswerPrevBtn").show()
 	}else{
@@ -411,10 +410,10 @@ function answerPaging(){
 
 //댓글 페이징 버튼
 function commentPaging(){
-	if(currentPage <= 1){
+	if(currentPage == 1){
 		$("#CommentNextBtn").show()
 		$("#CommentPrevBtn").hide()
-	}else if(currentPage >= lastPage){	
+	}else if(currentPage > lastPage){	
 		$("#CommentNextBtn").hide()
 		$("#CommentPrevBtn").show()
 	}else{
@@ -425,10 +424,10 @@ function commentPaging(){
 
 //태그 페이징 버튼
 function tagPaging(){
-	if(currentPage <= 1){
+	if(currentPage == 1){
 		$("#TagNextBtn").show()
 		$("#TagPrevBtn").hide()
-	}else if(currentPage >= lastPage){	
+	}else if(currentPage > lastPage){	
 		$("#TagNextBtn").hide()
 		$("#TagPrevBtn").show()
 	}else{
@@ -689,7 +688,6 @@ $(document).ready(function() {
 
 	//태그 다음 버튼 
 	$("#TagNextBtn").click(function(){
-		currentPage=1;
 		buttonHide();
 		$("#contentBoard").hide();
 		$("#boardList").empty();
@@ -713,7 +711,6 @@ $(document).ready(function() {
 	
 	//태그 이전 버튼 
 	$("#TagPrevBtn").click(function(){
-		currentPage=1;
 		buttonHide();
 		$("#contentBoard").hide();
 		$("#boardList").empty();
